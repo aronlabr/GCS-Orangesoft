@@ -1,4 +1,5 @@
-# <h1 align="center"> Proyecto:  SISTEMA DE PLANIFICACIÓN ALIMENTICIA MEAL PLANNER (MP)
+# <h1 align="center"> Proyecto:  
+# <h1 align="center"> SISTEMA DE PLANIFICACIÓN ALIMENTICIA MEAL PLANNER (MP)
 
 # <h1 align="center"> GCS - Equipo 2
 
@@ -12,7 +13,6 @@ Dra. Lenis Rossi Wong Portillo
 
 # Integrantes
 ---
-
 - Arango Quispe, Esmeralda - 19200300
 - Blas Ruiz, Luis Aaron - 19200069
 - Huarhuachi Ortega, Andrea Mariana - 19200267  
