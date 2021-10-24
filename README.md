@@ -1,4 +1,3 @@
-# <h1 align="center"> Proyecto:  
 # <h1 align="center"> SISTEMA DE PLANIFICACIÓN ALIMENTICIA MEAL PLANNER (MP)
 
 # <h1 align="center"> GCS - Equipo 2
