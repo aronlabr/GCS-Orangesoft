@@ -7,15 +7,15 @@ Aplicativo web que personaliza plan de comidas de forma semanal según su dieta,
   
 # Curso
 ---
-Gestión de la configuración del Software
+Gestión de la configuración del Software.
 
 # Docente
 ---
-Dra. Lenis Rossi Wong Portillo
+Dra. Lenis Rossi Wong Portillo.
 
 # Coordinadora
 ---
-- Torres Talaverano, Luz Elena
+- Torres Talaverano, Luz Elena.
   
 # Integrantes
 ---
