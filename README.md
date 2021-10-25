@@ -3,7 +3,8 @@
 # <h1 align="center">  GCS  -  Equipo 2
 # Descripción
 ---
-  Es un aplicativo web que permite organizar sus alimentos (en desayuno, almuerzo y cena) en un calendario personalizado.
+  Es un aplicativo web que personalice su plan de comidas semanal según su dieta, hábitos alimenticios, preferencias y cualquier intolerancia o alergia alimentaria con el objetivo de facilitar la organización de sus alimentos en un calendario personalizado.
+  
 # Curso
 ---
 Gestión de la configuración del Software
