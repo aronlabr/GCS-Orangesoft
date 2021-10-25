@@ -2,7 +2,8 @@
 
 # <h1 align="center">  GCS  -  Equipo 2
 # Descripción
-  
+---
+  Es un aplicativo web que permite organizar sus alimentos (en desayuno, almuerzo y cena) en un calendario personalizado.
 # Curso
 ---
 Gestión de la configuración del Software
