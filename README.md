@@ -1,4 +1,5 @@
-# <h1 align="center"> SISTEMA DE PLANIFICACIÓN ALIMENTICIA  -  MEAL PLANNER (MP)
+# <h1 align="center"> SISTEMA DE PLANIFICACIÓN ALIMENTICIA  
+# <h1 align="center">  MEAL PLANNER (MP)
 
 # <h1 align="center">  GCS  -  Equipo 2
 # Descripción
