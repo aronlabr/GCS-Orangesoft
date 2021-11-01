@@ -15,12 +15,7 @@ Gestión de la configuración del Software.
 ---
 Dra. Lenis Rossi Wong Portillo.
 
-# Coordinadora
----
-- Torres Talaverano, Luz Elena.
-  
-# Integrantes
----
+
 
  
 
