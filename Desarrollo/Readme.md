@@ -23,8 +23,7 @@ Dra. Lenis Rossi Wong Portillo.
 ---
 - Arango Quispe, Esmeralda - 19200300
 - Blas Ruiz, Luis Aaron  -  19200069
-- Huarhuachi Ortega, Andrea Mariana - 19200267  
-- Palacios Barrutia, Jeanpiere Julian - 19200274  
+ 
 
 
 
