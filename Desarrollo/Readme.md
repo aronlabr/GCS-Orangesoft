@@ -27,5 +27,4 @@ Dra. Lenis Rossi Wong Portillo.
 - Palacios Barrutia, Jeanpiere Julian - 19200274  
 - Rojas Villanueva, Paula Elianne - 19200266
 - Torres Berlanga, Christian - 19200291
-- Torres Talaverano, Luz Elena - 19200294
 
