@@ -21,8 +21,7 @@ Dra. Lenis Rossi Wong Portillo.
   
 # Integrantes
 ---
-- Arango Quispe, Esmeralda - 19200300
-- Blas Ruiz, Luis Aaron  -  19200069
+
  
 
 
