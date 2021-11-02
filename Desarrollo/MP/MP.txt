@@ -1,24 +1,24 @@
-# <h1 align="center"> MEAL PLANNER (MP)
+MEAL PLANNER (MP)
 
-# <h1 align="center">  GCS - Equipo 2
+GCS - Equipo 2
   
-# Descripción
+Descripción
 ---
 Sistema web que personaliza plan de comidas de forma semanal según su dieta, hábitos alimenticios, preferencias y cualquier intolerancia o alergia alimentaria con el objetivo de facilitar la organización de sus alimentos en un calendario personalizado.
   
-# Curso
+Curso
 ---
 Gestión de la configuración del Software.
 
-# Docente
+Docente
 ---
 Dra. Lenis Rossi Wong Portillo.
 
-# Coordinadora
+Coordinadora
 ---
 - Torres Talaverano, Luz Elena.
   
-# Integrantes
+Integrantes
 ---
 - Arango Quispe, Esmeralda - 19200300
 - Blas Ruiz, Luis Aaron  -  19200069
