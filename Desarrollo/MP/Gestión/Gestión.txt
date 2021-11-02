@@ -1,3 +1,4 @@
 Hito 1: 
+Cronograma del Proyecto
 Plan de Proyecto (PROJECT CHARTER)
-Lista de Historias de Usuario
+
