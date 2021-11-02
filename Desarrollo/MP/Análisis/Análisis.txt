@@ -1,1 +1,4 @@
-
+Hito 1:
+Lista de Historias de Usuario
+Documento de Especificación de la BD
+Documento de Especificación de UI
