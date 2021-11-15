@@ -12,7 +12,7 @@ Gestión de la configuración del Software.
 
 # Docente
 ---
-Dra. Lenis Rossi Wong Portillo.
+ Dra. Lenis Rossi Wong Portillo.
 
 # Coordinadora
 ---
