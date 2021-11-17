@@ -30,6 +30,7 @@
     <div class="container-fluid p-0 box-1">
       <div class="container-fluid text-left p-0 busqueda">
         <div class="m-0 p-0">
+          <!--Header-->
           <?php include("layouts/header.php"); ?>
           <!-- MDB -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
