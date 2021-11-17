@@ -124,5 +124,6 @@
   <br>
   <br>
 </div>
+<!--Footer -->
 <?php include("layouts/footer.php"); ?>
 
