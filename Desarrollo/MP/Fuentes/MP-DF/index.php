@@ -27,10 +27,9 @@
   </head>
   <main class="container-fluid px-0">
     <!-- Start your project here-->
-    <div class="container-fluid p-0 box-1">
+    <div class="container-fluid p-0 box-1" style="height:100%; widht:100%;">
       <div class="container-fluid text-left p-0 busqueda">
         <div class="m-0 p-0">
-          <!--Header-->
           <?php include("layouts/header.php"); ?>
           <!-- MDB -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
@@ -39,14 +38,15 @@
         </div>
       </div>
       <div class="container tittles">
-        <div class="position-absolute">
-          <h2 class="text1 text-md-left" style="font-size:3vw;">BIENVENIDO A</h2>
+        <div class="container-fluid">
+          <h2 class="text1 text-md-left" style="font-size:3.5vw;">BIENVENIDO A</h2>
           <h2 class="text2 text-md-left" style="font-size:10vw;">MEAL</h2> 
           <h2 class="text3 text-md-left" style="font-size:5vw;">P       L       A       N       N       E       R</h2> 
           <div class="container my-5 mx-0">
-                  <p class="text4 text-left text-md-center" style="font-size:2.4vw;margin: 0px auto;">Meal Planner crea planes de comidas personalizados basados ​​en sus 
+                  <p class="text4 text-left text-md-center" style="font-size:2vw;margin: 0px auto;">Meal Planner crea planes de comidas personalizados basados ​​en sus 
             preferencias alimentarias, presupuesto y horario.</p>
           </div>
+          <br>
         </div>
       </div>
     </div>  
@@ -60,9 +60,9 @@
   </div>
   <div class="row justify-content-around">
     <div class="col-5 col-md-5 mx-5 text-center">
-      <div class="container box-blue" style="height: 60px;">
+      <div class="container box-blue" style="widht:100%;">
         <h2 class="text6 text-center font-weight-bold align-text-center" 
-        style="font-size:1.7vw; color:white; font-family: 'Montserrat', sans-serif;padding-top:16px;">
+        style="font-size:1.7vw; color:white; font-family: 'Montserrat', sans-serif;">
           RECOMENDACIONES DE RECETAS</h2>
       </div>
       <br>  
@@ -74,9 +74,9 @@
         color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>
     </div>
     <div class="col-5 col-md-5 text-center">
-      <div class="container box-blue" style="height: 60px;">
-        <h2 class="text6 text-center font-weight-bold align-items-center" 
-        style="font-size:1.7vw; color:white; font-family: 'Montserrat', sans-serif;padding-top:16px;">
+      <div class="container box-blue" style="widht:100%;">
+        <h2 class="text6 text-center font-weight-bold align-text-center" 
+        style="font-size:1.7vw; color:white; font-family: 'Montserrat', sans-serif;">
           PERSONALIZA TU CALENDARIO</h2>
       </div>
       <br>
@@ -124,6 +124,4 @@
   <br>
   <br>
 </div>
-<!--Footer -->
 <?php include("layouts/footer.php"); ?>
-
