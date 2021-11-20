@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
-    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+    <a class="navbar-brand me-2" href="./index.php">
       <img
         src="img/logo.png"
         height="auto"
@@ -23,18 +23,22 @@
     <div class="navbar-nav collapse navbar-collapse" id="navbarButtonsExample">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5 mx-auto">
         <li class="nav-item ">
-          <a class="nav-link text-white" href="#">Nosotros <hr style="opacity: 1;"></a>
+          <a class="nav-link text-white" href="./about-us.php" >Nosotros <hr style="opacity: 1;"></a>
         </li>
       </ul>
       <div class="d-flex align-items-center botones">
-        <button type="button" id ="r" class="btn btn-primary me-3 btn-lg" style="font-size: 1.2vw;
-        font-family: 'Montserrat', sans-serif;font-weight: 700;">
-          Registrate
-        </button>
-        <button type="button" id ="i" class="btn btn-primary me-3 btn-lg"style="font-size: 1.2vw;
-        font-family: 'Montserrat', sans-serif;font-weight: 700;">
-          Iniciar sesión
-        </button>
+        <a href="./register.php">
+          <button type="button" id ="r" class="btn btn-primary me-3 btn-lg" style="font-size: 1.2vw;
+          font-family: 'Montserrat', sans-serif;font-weight: 700; padding: 12px 30px;">
+            Registrate
+          </button>
+        </a>
+        <a href="./login.php">
+          <button type="button" id ="i" class="btn btn-primary me-3 btn-lg"style="font-size: 1.2vw;
+          font-family: 'Montserrat', sans-serif;font-weight: 700; padding: 12px 24px;">
+            Iniciar sesión
+          </button>
+        </a>
       </div>
     </div>
   </div>
