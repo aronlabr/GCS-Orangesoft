@@ -29,8 +29,9 @@
     <section class="main-container">
       <h1>Iniciar Sesión</h1>
       <h2>Ingrese su cuenta</h2>
-      <form action="login.php" method="post">
+      <form action="" method="post">
         <div class="input-container">
+          <?php if(isset($_SESSION["errorMessage"])) ?>
           <i class="login-icon"></i>
           <input type="email" name="email" placeholder="Correo de usuario">
         </div>
@@ -38,7 +39,7 @@
           <i class="pass-icon"></i>
           <input type="password" name="password" placeholder="Contraseña">
         </div>
-        <input type="submit" value="Ingresar">
+        <input type="submit" name="submit" value="Ingresar">
       </form>
       <div class="register-option">
         <p>¿No tienes cuenta?</p>
@@ -49,5 +50,38 @@
   <footer class="login-footer">
     <?php require('./layouts/footer-2.php')?>
   </footer>
+<?php
+  if(isset($_POST["submit"])){
+      if(!empty($_POST['email']) && !empty($_POST['password'])) {
+          $usuario=strtolower($_POST['email']);
+          $pass=$_POST['password'];
+          $con=mysqli_connect('localhost','root','','mp');
+          $query=mysqli_query($con, "SELECT * FROM usuario WHERE correo='".$usuario."' AND password='".$pass."'");
+          $numrows=mysqli_num_rows($query);
+
+          if($numrows!=0) {
+				
+              while($row=mysqli_fetch_assoc($query)) {
+                  $dbusername=$row['correo'];
+                  $dbpassword=$row['password'];
+                  $dbnombre=$row['nombres'];
+              }
+            
+              if($usuario == $dbusername && $pass == $dbpassword) {
+                  session_start();
+                  $_SESSION['sess_user']=$dbnombre;
+                  header("Location: index.php");
+              }  
+          } else {
+              $message = "Error! Usuario o password inválidos";
+              echo "<script type='text/javascript'>alert('$message');</script>";
+          }
+
+      } else {
+          $message = "Error! Completar todos los campos";
+          echo "<script type='text/javascript'>alert('$message');</script>";
+      }
+  }
+  ?>
 </body>
 </html>

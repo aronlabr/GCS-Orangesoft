@@ -22,15 +22,22 @@
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
- 
-    
   </head>
   <main class="container-fluid px-0">
     <!-- Start your project here-->
-    <div class="container-fluid p-0 box-1" style="height:100%; widht:100%;">
+    <div class="container-fluid p-0 box-1" style="height:100%; width:100%;">
       <div class="container-fluid text-left p-0 busqueda">
         <div class="m-0 p-0">
-          <?php include("layouts/header.php"); ?>
+			<?php
+				session_start();
+        $usuario = "";
+				if(isset($_SESSION["sess_user"])){  
+          $usuario = $_SESSION["sess_user"];
+					include("layouts/header_sesion.php");
+				} else {
+					include("layouts/header.php");
+        }
+			?>
           <!-- MDB -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
           <!-- Custom scripts -->
@@ -41,7 +48,7 @@
         <div class="container-fluid">
           <h2 class="text1 text-md-left" style="font-size:3.5vw;">BIENVENIDO A</h2>
           <h2 class="text2 text-md-left" style="font-size:10vw;">MEAL</h2> 
-          <h2 class="text3 text-md-left" style="font-size:5vw;">P       L       A       N       N       E       R</h2> 
+          <h2 class="text3 text-md-left" style="font-size:5vw;">P       L       A       N       N       E       R </h2> 
           <div class="container my-5 mx-0">
                   <p class="text4 text-left text-md-center" style="font-size:2vw;margin: 0px auto;">Meal Planner crea planes de comidas personalizados basados ​​en sus 
             preferencias alimentarias, presupuesto y horario.</p>
@@ -60,7 +67,7 @@
   </div>
   <div class="row justify-content-around">
     <div class="col-5 col-md-5 mx-5 text-center">
-      <div class="container box-blue" style="widht:100%;">
+      <div class="container box-blue" style="width:100%;">
         <h2 class="text6 text-center font-weight-bold align-text-center" 
         style="font-size:1.7vw; color:white; font-family: 'Montserrat', sans-serif;">
           RECOMENDACIONES DE RECETAS</h2>
@@ -74,7 +81,7 @@
         color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>
     </div>
     <div class="col-5 col-md-5 text-center">
-      <div class="container box-blue" style="widht:100%;">
+      <div class="container box-blue" style="width:100%;">
         <h2 class="text6 text-center font-weight-bold align-text-center" 
         style="font-size:1.7vw; color:white; font-family: 'Montserrat', sans-serif;">
           PERSONALIZA TU CALENDARIO</h2>

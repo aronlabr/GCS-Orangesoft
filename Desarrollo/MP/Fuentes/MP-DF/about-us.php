@@ -27,7 +27,7 @@
 <body>
   <header>
     <section class="header-container" style="background: transparent;">
-      <div class="container-fluid p-0 box-1" style="background: transparent; height:100%; widht:100%;">
+      <div class="container-fluid p-0 box-1" style="background: transparent; height:100%; width:100%;">
         <div class="container-fluid text-left p-0 busqueda" style="background: transparent;">
           <div class="m-0 p-0">
             <?php include("layouts/header.php"); ?>
