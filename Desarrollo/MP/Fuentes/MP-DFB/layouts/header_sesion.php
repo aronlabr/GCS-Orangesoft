@@ -6,7 +6,11 @@
         height="auto"
         alt=""
         loading="lazy"
+<<<<<<< HEAD
         style="margin-top: -14px;width: 210px;height: 90px;"
+=======
+        style="margin-top: -14px;width: 15vw;height: 6vw;"
+>>>>>>> origin/huarhuachiortega
         class="img-fluid me-3"
       />
     </a>
@@ -23,6 +27,7 @@
     <div class="navbar-nav collapse navbar-collapse" id="navbarButtonsExample">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5 mx-auto">
         <li class="nav-item ">
+<<<<<<< HEAD
           <a class="nav-link text-white" href="./about-us.php" >Nosotros  -   <?=$usuario;?> <hr style="opacity: 1;"></a>
         </li>
       </ul>
@@ -35,6 +40,33 @@
           </button>
         </a>
       </div>
+=======
+          <a class="nav-link text-white" href="./about-us.php" style="margin-right:200px">Nosotros<hr style="opacity: 1;"></a>
+        </li>
+      </ul>
+          '<div class="d-flex align-items-center me-3 botones" style="margin: 0vw -10vw;">
+          <div class="container">
+              <img src="./img/icon-user.png" class="img-fluid" alt="">
+          </div>
+          <div class="container">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenu2"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+                style="padding:15px 35px;font-size:1.2vw;background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%); color: white"
+              >
+              <?=$usuario;?>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="./cerrar_sesion.php"><button class="dropdown-item font-weight-bold" type="button" style="font-size:1.2vw;">
+                  Cerrar sesión</button></a></li>
+              </ul>
+            </div>
+          </div>
+>>>>>>> origin/huarhuachiortega
     </div>
   </div>
 </nav>
