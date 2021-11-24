@@ -28,16 +28,7 @@
     <div class="container-fluid p-0 box-1" style="height:100%; width:100%;">
       <div class="container-fluid text-left p-0 busqueda">
         <div class="m-0 p-0">
-			<?php
-				session_start();
-        $usuario = "";
-				if(isset($_SESSION["sess_user"])){  
-          $usuario = $_SESSION["sess_user"];
-					include("layouts/header_sesion.php");
-				} else {
-					include("layouts/header.php");
-        }
-			?>
+			    <?php include("layouts/header.php"); ?>
           <!-- MDB -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
           <!-- Custom scripts -->
