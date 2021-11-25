@@ -9,6 +9,9 @@ Entrega  : 14.11.21
   * Lista de Clasificación de CI
   * Definición de la Nomenclatura del Ítem 
   * Lista de Ítem con la nomenclatura
- 
-
+v2
+Entrega  : 17.11.21
+-	Control de la GCS 
+  *Definición de Línea Base 
+  *Librerías Controladas
 
