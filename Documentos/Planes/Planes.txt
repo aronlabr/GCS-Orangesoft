@@ -1,2 +1,14 @@
 Se realizó los siguientes apartados: 
+v1
+Entrega  : 14.11.21 
+-	Introducción 
+  * Situación de la Empresa
+  * Problemática
+  * Objetivo de la PGC).
+-	Identificación de la configuración 
+  * Lista de Clasificación de CI
+  * Definición de la Nomenclatura del Ítem 
+  * Lista de Ítem con la nomenclatura
+ 
+
 
