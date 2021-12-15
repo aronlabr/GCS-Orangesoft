@@ -8,86 +8,106 @@
   <link rel="stylesheet" href="./assets/css/log-reg.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-  <img class="back-img" src="./assets/img/register-background.png" alt="">
-  <header>
-      <section class="header-container">
-        <a class="header-logo" href="./index.php">
-          <i></i>
-          <h1>MEAL PLANNER</h1>
-        </a>
-        <section class="header-links">
-          <ul>
-            <li><a href="./about-us.php">NOSOTROS</a></li>
-            <li><a class="btn-first" href="login.php">INICIAR SESIÓN</a></li>
-          </ul>
-        </section>
-      </section>
-  </header>
-  <main>
-    <section class="main-container register-form">
-      <h1>REGÍSTRATE</h1>
-      <h2>Necesitamos de tu información básica para empezar</h2>
-      <form action="register.php" method="post">
-        <div class="register-groups">
-          <ul>
-            <li>
-              <h3>Nombres</h3>
-              <input class="input-container" type="text" name="name" placeholder="Ingresar sus nombres completos" require>
-            </li>
-            <li>
-              <h3>Apellidos</h3>
-              <input class="input-container" type="text" name="last-name" placeholder="Ingresar sus apellidos completos" require>
-            </li>
-            <li>
-              <h3>Correo</h3>
-              <input class="input-container" type="email" name="email" placeholder="Ingresar su correo electrónico" require>
-            </li>
-            <li>
-              <h3>Sexo</h3>
-              <div class="input-container">
-                <select name="sexo" id="">
-                  <div class="input-container">
+<main class="container-fluid px-0">
+    <!-- Start your project here-->
+    <div class="container-fluid p-0 box-1-register" style="height:100%; width:100%;">
+      <div class="container-fluid text-left p-0 busqueda">
+        <div class="m-0 p-0">
+			    <?php include("layouts/header.php"); ?>
+          <!-- MDB -->
+          <script type="text/javascript" src="js/mdb.min.js"></script>
+          <!-- Custom scripts -->
+          <script type="text/javascript"></script>
+        </div>
+        <div class="container w-50" style="background-color:rgb(51 59 79 / 78%);border-radius:20px;">
+          <h1 style="font-family: 'Roboto', sans-serif;padding-top:3vw" class="text-center">REGISTRATE</h1>
+          <div class="container w-100">
+
+          
+            <h2 style="font-family: 'Montserrat', sans-serif;font-size:1.5vw;" class="text-center">
+            Necesitamos de tu información básica para empezar</h2>
+
+            <form action="" method="post">
+              <div class="row g-5">
+                <div class="col">
+                  <label for="input1" class="form-label">Nombres</label>
+                  <input class="form-control" type="text" name="name" placeholder="Ingresar sus nombres completos" 
+                  id="input1" require>
+                </div>
+                <div class="col">
+                <label for="input2" class="form-label">Contraseña</label>
+                <input class="form-control" type="password" name="pass" placeholder="Ingresar su contraseña" 
+                for="input1" require>
+                </div>
+              </div>
+              <div class="row g-5" style="margin-top:-5%">
+                <div class="col">
+                  <label for="input3" class="form-label">Apellidos</label>
+                  <input class="form-control" type="text" name="last-name" placeholder="Ingresar sus apellidos completos" 
+                  id="input3" require>
+                </div>
+                <div class="col">
+                <label for="input4" class="form-label">Repite contraseña</label>
+                <input class="form-control" type="password" name="pass2" placeholder="Ingresar nuevamente su contraseña" 
+                for="input4" require>
+                </div>
+              </div>
+              <div class="row g-5" style="margin-top:-5%">
+                <div class="col">
+                  <label for="input5" class="form-label">Correo</label>
+                  <input class="form-control" type="email" name="email" placeholder="Ingresar su correo electrónico" 
+                  for="input5" require>
+                </div>
+                <div class="col">
+                <label for="input6" class="form-label">Celular(opcional)</label>
+                <input class="form-control" type="text" name="phone" placeholder="Ingresar su número de celular" for="input6">
+                </div>
+              </div>
+              <div class="row g-5" style="margin-top:-5%">
+                <div class="col">
+                  <label for="input7" class="form-label">Sexo</label>
+                  <select name="sexo" id="" class="form-select">
+                  <div class="form-control">
                     <option value="" selected disabled hidden>Seleccionar</option>
                     <option value="M">Masculino</option>
                     <option value="F">Femenino</option>
                   </div>
                 </select>
+                </div>
+                <div class="col">
+                <label for="input8" class="form-label">Edad</label>
+                <input class="form-control" type="text" name="age" placeholder="Ingresar su edad" 
+                id="input8" require>
+                </div>
               </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h3>Contraseña</h3>
-              <input class="input-container" type="password" name="pass" placeholder="Ingresar su contraseña" require>
-            </li>
-            <li>
-              <h3>Repite Contraseña</h3>
-              <input class="input-container" type="password" name="pass2" placeholder="Ingresar nuevamente su contraseña" require>
-            </li>
-            <li>
-              <h3>Celular (opcional)</h3>
-              <input class="input-container" type="text" name="phone" placeholder="Ingresar su número de celular">
-            </li>
-            <li>
-              <h3>Edad</h3>
-              <input class="input-container" type="text" name="age" placeholder="Ingresar su edad" require>
-            </li>
-          </ul>
+
+              <div class="text-center">
+                <input type="submit" name="submit" value="Registrar">
+
+              </div>
+              
+            </form>
+            <div class="register-option text-center" style="padding-bottom:10%">
+              <p>¿Ya tienes cuenta?</p>
+              <a href="login.php" stlye="color:white !important; font-size:1vw">INICIAR SESIÓN</a>
+            </div>
+          </div>
         </div>
-        <input type="submit" name="submit" value="Registrar">
-      </form>
-      <div class="register-option">
-        <p>¿Ya tienes cuenta?</p>
-        <a href="login.php">INICIAR SESIÓN</a>
       </div>
-    </section>
-  </main>
-  <footer>
-    <?php require('./layouts/footer-2.php')?>
-  </footer>
+      <br> 
+      <br>
+      <br>
+    </div> 
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</main>
+<?php require('./layouts/footer.php')?>
 <?php
   if(isset($_POST["submit"])){
       if(!empty($_POST['email']) && !empty($_POST['pass']) && !empty($_POST['pass2']) && !empty($_POST['name']) &&
@@ -133,5 +153,4 @@
       }
   }
 ?>
-</body>
 </html>
