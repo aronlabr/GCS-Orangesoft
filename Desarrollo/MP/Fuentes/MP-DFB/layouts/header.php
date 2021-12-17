@@ -31,9 +31,6 @@
         <li class="nav-item ">
           <a class="nav-link text-white" href="./about-us.php" style="margin-right:200px">Nosotros<hr style="opacity: 1;"></a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white" href="./recetas.php" style="margin-right:200px">Recetas</a>
-        </li>
       </ul>
           '<div class="d-flex align-items-center me-3 botones" style="margin: 0vw -10vw;">
           <div class="container">
@@ -92,9 +89,6 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5 mx-auto">
         <li class="nav-item ">
           <a class="nav-link text-white" href="./about-us.php" >Nosotros <hr style="opacity: 1;"></a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white" href="./recetas.php" style="margin-right:200px">Recetas</a>
         </li>
       </ul>
       <div class="d-flex align-items-center botones">

@@ -2,9 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Server version: 5.7.31
--- PHP Version: 7.3.21
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 17-12-2021 a las 20:51:12
+-- Versión del servidor: 5.7.31
+-- Versión de PHP: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -17,13 +18,30 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mp`
+-- Base de datos: `mp`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estructura de tabla para la tabla `events`
+--
+
+DROP TABLE IF EXISTS `events`;
+CREATE TABLE IF NOT EXISTS `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user` varchar(255) DEFAULT NULL,
+  `title` varchar(255) NOT NULL,
+  `color` varchar(7) DEFAULT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
 --
 
 DROP TABLE IF EXISTS `usuario`;
@@ -37,14 +55,15 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `password` varchar(45) NOT NULL,
   `celular` int(9) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `usuario`
+-- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nombres`, `apellidos`, `sexo`, `edad`, `correo`, `password`, `celular`) VALUES
-(1, 'admin', 'admin', 'a', 1, 'admin@admin.com', 'admin', 0);
+(1, 'admin', 'admin', 'a', 1, 'admin@mealplanner.com', '1', 0),
+(15, 'dev', 'dev', 'M', 1, 'dev@mealplanner.com', '1', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

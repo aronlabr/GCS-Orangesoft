@@ -1,8 +1,16 @@
 <?php
 require_once('bdd.php');
+include("layouts/header.php");
 
-
-$sql = "SELECT id, title, start, end, color FROM events ";
+if(isset($_SESSION["sess_user"])){  
+	$sql = "SELECT id, user, title, start, end, color FROM events WHERE user='$_SESSION[sess_user]'";
+}
+else {
+	$message = "Tiene que iniciar sesión";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+	echo '<script>window.location.href = "login.php";</script>'; 
+	exit();
+}
 
 $req = $bdd->prepare($sql);
 $req->execute();
@@ -15,7 +23,6 @@ $events = $req->fetchAll();
 <html lang="es">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,14 +37,16 @@ $events = $req->fetchAll();
 	<!-- FullCalendar -->
 	<link href='css/fullcalendar.css' rel='stylesheet' />
 
-
-    <!-- Custom CSS -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="css/mdb.min.css" /> -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
 
 <body>
     <div class="container">
-                <h1>FullCalendar PHP MySQL</h1>
+                
                 <div id="calendar" class="col-md-12">
             </div>
 			
@@ -177,9 +186,9 @@ $events = $req->fetchAll();
 	$(document).ready(function() {
 
 		var date = new Date();
-       var yyyy = date.getFullYear().toString();
-       var mm = (date.getMonth()+1).toString().length == 1 ? "0"+(date.getMonth()+1).toString() : (date.getMonth()+1).toString();
-       var dd  = (date.getDate()).toString().length == 1 ? "0"+(date.getDate()).toString() : (date.getDate()).toString();
+        var yyyy = date.getFullYear().toString();
+        var mm = (date.getMonth()+1).toString().length == 1 ? "0"+(date.getMonth()+1).toString() : (date.getMonth()+1).toString();
+    	var dd  = (date.getDate()).toString().length == 1 ? "0"+(date.getDate()).toString() : (date.getDate()).toString();
 		
 		$('#calendar').fullCalendar({
 			header: {
@@ -208,12 +217,12 @@ $events = $req->fetchAll();
 					$('#ModalEdit').modal('show');
 				});
 			},
-			eventDrop: function(event, delta, revertFunc) { // si changement de position
+			eventDrop: function(event, delta, revertFunc) {
 
 				edit(event);
 
 			},
-			eventResize: function(event,dayDelta,minuteDelta,revertFunc) { // si changement de longueur
+			eventResize: function(event,dayDelta,minuteDelta,revertFunc) {
 
 				edit(event);
 
