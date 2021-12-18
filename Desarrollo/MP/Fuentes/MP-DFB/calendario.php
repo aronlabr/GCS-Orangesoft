@@ -39,8 +39,6 @@
         <div class="container-fluid text-left p-0 busqueda" style="background: transparent;">
           <div class="m-0 p-0">
             <?php include("layouts/header.php"); ?>
-            <!-- MDB -->
-            <script type="text/javascript" src="js/mdb.min.js"></script>
           </div>
         </div>
     </section>
@@ -71,7 +69,7 @@
         <img src="./assets/icons/calendar-title.svg" alt="" style="width: 100%; height: 100%;">
       </div>
     </section>
-		<section section class="calendar-container" style="width: 75%; height: auto; margin:auto; margin-bottom: 25px">
+		<section style="width: 75%; height: auto; margin:auto; margin-bottom: 25px">
 			<div class="container">
 				<div id="calendar" class="col-md-12" style="font-size: 20px; text-transform:capitalize;">
 			</div>
@@ -89,7 +87,6 @@
 				<h4 class="modal-title" id="myModalLabel">Agregar Evento</h4>
 			  </div>
 			  <div class="modal-body">
-				
 				  <div class="form-group">
 					<label for="title" class="col-sm-2 control-label">Titulo</label>
 					<div class="col-sm-10">
@@ -100,7 +97,7 @@
 					<label for="color" class="col-sm-2 control-label">Color</label>
 					<div class="col-sm-10">
 					  <select name="color" class="form-control" id="color">
-									  <option value="">Seleccionar</option>
+							<option disabled selected>Seleccionar color</option>
 						  <option style="color:#0071c5;" value="#0071c5">&#9724; Azul oscuro</option>
 						  <option style="color:#40E0D0;" value="#40E0D0">&#9724; Turquesa</option>
 						  <option style="color:#008000;" value="#008000">&#9724; Verde</option>						  
@@ -270,7 +267,7 @@
 				}
 			?>
 
-				,{
+				{
 					id: '<?php echo $event['id']; ?>',
 					title: '<?php echo $event['title']; ?>',
 					start: '<?php echo $start; ?>',

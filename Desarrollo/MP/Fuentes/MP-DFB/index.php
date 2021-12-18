@@ -31,10 +31,6 @@
       <div class="container-fluid text-left p-0 busqueda">
         <div class="m-0 p-0">
 			    <?php include("layouts/header.php"); ?>
-          <!-- MDB -->
-          <script type="text/javascript" src="js/mdb.min.js"></script>
-          <!-- Custom scripts -->
-          <script type="text/javascript"></script>
         </div>
       </div>
       <div class="container tittles">
@@ -52,6 +48,15 @@
     </div>  
   </div>
 </main>
+<style>
+  .row{
+    --mdb-gutter-x: none;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-right: 0; 
+    padding-left: 0;
+  }
+</style>
 <div class="container box-2">
   <div class="text-center my-5">
     <h1 style="font-size:3.5vw"class="text5">¿QUÉ BRINDA MEAL PLANNER?</h1>

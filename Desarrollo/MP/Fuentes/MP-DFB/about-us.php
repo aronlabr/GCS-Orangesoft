@@ -31,10 +31,6 @@
         <div class="container-fluid text-left p-0 busqueda" style="background: transparent;">
           <div class="m-0 p-0">
             <?php include("layouts/header.php"); ?>
-            <!-- MDB -->
-            <script type="text/javascript" src="js/mdb.min.js"></script>
-            <!-- Custom scripts -->
-            <script type="text/javascript"></script>
           </div>
         </div>
     </section>

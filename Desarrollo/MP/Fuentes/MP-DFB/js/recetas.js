@@ -367,7 +367,7 @@ let recetas = [receta_1, receta_2, receta_3, receta_4, receta_5, receta_6,receta
 function tarjeta(titulo, id, calorias){
     card = `<div id="receta_${id}" class="col d-none">
     <div class="card h-100">
-        <img src="img/recetas/receta_ (${id}).png" class="card-img-top img-fluid" alt="...">
+        <img src="./assets/img/recetas/receta_${id}.png" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
             <h5 class="card-title float-left" style="font-size:1.1em;color:black "> ${titulo}
             <img src="img/manzanita.png" alt="" 
@@ -420,7 +420,7 @@ function html_receta(receta){
                         TIEMPO DE COCCIÓN: 10 MIN</h6>
                     </div>
                     <h6 style="color:#032D53;font-weight:bolder">INGREDIENTES:</h6>
-                    <img src="img/recetas/receta_ (${receta.id}).png"  class="img-fluid" style="display:inline-block;float:right;height:16rem; border-radius:15px" alt="">
+                    <img src="./assets/img/recetas/receta_${receta.id}.png"  class="img-fluid" style="display:inline-block;float:right;height:16rem; border-radius:15px" alt="">
                     <ul style="color:black">`+generar_listas(receta.ingredientes)+`</ul>
                     
                     <h6 style="color:#032D53;font-weight:bolder">PREPARACIÓN:</h6>
@@ -473,8 +473,6 @@ function searchReceta(){
     let search = document.getElementById("search").value.toUpperCase();
     recetas.forEach(receta => reiniciar_search(receta));
     console.log(option);
-    console.log(selected);
-    console.log(search);
     recetas.forEach(receta => {
         if (receta.tiempo.includes(option) && receta.tipo.includes(selected) && receta.titulo.includes(search)){
             document.getElementById(`receta_${receta.id}`).classList.toggle("d-none");

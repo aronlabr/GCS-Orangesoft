@@ -57,7 +57,7 @@
       if(!empty($_POST['email']) && !empty($_POST['password'])) {
           $usuario=strtolower($_POST['email']);
           $pass=$_POST['password'];
-          $con=mysqli_connect('localhost','root','','mp');
+          $con=mysqli_connect('localhost','root','root','mp');
           $query=mysqli_query($con, "SELECT * FROM usuario WHERE correo='".$usuario."' AND password='".$pass."'");
           $numrows=mysqli_num_rows($query);
 

@@ -15,11 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <!-- MDB -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    
-    
+
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/recetas.css" />
@@ -35,13 +32,10 @@
 </head>
 
 <body>
-    <script src="js/javascript.js"></script>
     <div class="container-fluid p-0 search" style="height:100%; width:100%;">
         <div class="container-fluid text-left p-0 busqueda">
             <div class="m-0 p-0">
                 <?php include("layouts/header.php"); ?>
-                <script type="text/javascript" src="js/mdb.min.js"></script>
-                <script type="text/javascript"></script>
             </div>
         </div>
         <div class="container d-flex align-items-center text-center justify-content-center mt-0 pt-5"
@@ -71,7 +65,7 @@
                         <option value="Comida rápida">Comida rápida</option>
                     </select>
                     <input type="search" id="search" class="form-control" placeholder="Search" aria-label="Search"
-                    aria-describedby="search-addon" value="" style="height:auto;border:none;border-radius:0px" required="true"/>
+                    aria-describedby="search-addon" style="height:auto;border:none;border-radius:0px" required="true"/>
                     <button type="button" class="btn btn-primary" onclick="searchReceta()"
                     style="border-radius:0px;background-color:#F3F3F4;color:black">
                         <i class="fas fa-search"></i>
@@ -94,7 +88,7 @@
   <br>
   <br>
   <?php include("layouts/footer.php"); ?>
-  <script src="js/javascript.js"></script>
+  <script src="js/recetas.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   
