@@ -5,6 +5,7 @@ receta_1 = {
     titulo: "SMOOTHY ANTIOXIDANTE",
     tiempo: ["DESAYUNO"],
     tipo: ["Dietética", "Vegetariana", "Comida rápida"],
+    calorias: 150,
     ingredientes: [
         "1 dátil o endulzante preferido",
         "100 g de frutos rojos(frescos o congelados)",
@@ -30,6 +31,7 @@ receta_2 = {
     titulo: "PANQUEQUES DE AVENA CON PLATANO",
     tiempo: ["DESAYUNO"],
     tipo: ["Dietética", "Vegetariana", "Comida rápida"],
+    calorias: 120,
     ingredientes: [
         "5 cucharadas de harina de avena o en hojuelas",
         "100 g de fresas (opcional)",
@@ -61,6 +63,7 @@ receta_3 = {
     titulo: "PUDÍN SEMILLAS DE CHÍA",
     tiempo: ["DESAYUNO", "ALMUERZO"],
     tipo: ["Dietética", "Vegetariana", "Comida rápida"],
+    calorias: 100,
     ingredientes: [
         "2 peras o frutas de tu preferencia",
         "4 cucharadas de semillas de chía",
@@ -84,6 +87,7 @@ receta_4 = {
     titulo: "TORTITAS DE CLARAS CON FRESAS",
     tiempo: ["DESAYUNO"],
     tipo: ["Dietética"],
+    calorias: 200,
     ingredientes: [
         "4 claras (que hayan sobrado de otro postre)",
         "50 g de avena molida",
@@ -112,6 +116,7 @@ receta_5 = {
     titulo: "PORRIGDE DE AVENA Y FRUTAS CON CHOCOLATE",
     tiempo: ["DESAYUNO", "CENA"],
     tipo: ["Vegetariana", "Comida rápida"],
+    calorias: 160,
     ingredientes: [
         "1 taza y media de leche vegetal",
         "1 taza de avena en copos (a mi me gustan más los finos, porque no son tan duros y cuecen antes)",
@@ -139,6 +144,7 @@ receta_6 = {
     titulo: "FILETE DE POLLO A LA PLANCHA",
     tiempo: ["ALMUERZO"],
     tipo: ["Típica peruana"],
+    calorias: 220,
     ingredientes: [
         "2 filetes de pechuga de pollo",
         "1 Limón",
@@ -163,6 +169,7 @@ receta_7 = {
     titulo: "ATUN SALTEADO CON VERDURAS",
     tiempo: ["ALMUERZO"],
     tipo: ["Dietética", "Comida rápida", "Típica peruana"],
+    calorias: 200,
     ingredientes: [
         "4 filetes de atún fresco",
         "1 manojo de cebolletas",
@@ -192,6 +199,7 @@ receta_8 = {
     titulo: "CREMA FRIA DE AGUACATE Y LIMON",
     tiempo: ["DESAYUNO", "CENA"],
     tipo: ["Dietética", "Vegetariana"],
+    calorias: 175,
     ingredientes: [
         "1 aguacate",
         "1 aguacate",
@@ -215,6 +223,7 @@ receta_9 = {
     titulo: "ENSALADA DE GARBANZOS Y POLLO",
     tiempo: ["DESAYUNO", "ALMUERZO"],
     tipo: ["Dietética", "Típica peruana", "Comida rápida"],
+    calorias: 110,
     ingredientes: [
         "200 g de garbanzos secos o cocidos",
         "1 pechuga de pollo fileteada",
@@ -246,6 +255,7 @@ receta_10 = {
     titulo: "ENSALADA DE LENTEJAS",
     tiempo: ["ALMUERZO", "CENA"],
     tipo: ["Dietética", "Vegetariana", "Comida rápida", "Típica peruana"],
+    calorias: 130,
     ingredientes: [
         "400 g de lentejas, en conserva.",
         "1 pimiento rojo",
@@ -272,6 +282,7 @@ receta_11 = {
     titulo: "SEPIA A LA PLANCHA",
     tiempo: ["ALMUERZO"],
     tipo: ["Dietética", "Típica peruana", "Comida rápida"],
+    calorias: 210,
     ingredientes: [
         "2 sepias",
         "4-6 dientes de ajo",
@@ -296,6 +307,7 @@ receta_12 = {
     titulo: "MEJILLONES Y TABULE",
     tiempo: ["ALMUERZO"],
     tipo: ["Dietética"],
+    calorias: 170,
     ingredientes: [
         "5 rodajas de merluza de centímetro y medio de grosor",
         "3 ajos",
@@ -322,6 +334,7 @@ receta_13 = {
     titulo: "ENSALADA DE PASTA",
     tiempo: ["ALMUERZO", "CENA"],
     tipo: ["Típica peruana", "Vegetariana", "Comida rápida"],
+    calorias: 230,
     ingredientes: [
         "1 kg mejillones",
         "Limón (opcional)",
@@ -351,7 +364,7 @@ receta_13 = {
 
 let recetas = [receta_1, receta_2, receta_3, receta_4, receta_5, receta_6,receta_7, receta_8, receta_9, receta_10, receta_11, receta_12, receta_13];
 
-function tarjeta(titulo, id){
+function tarjeta(titulo, id, calorias){
     card = `<div id="receta_${id}" class="col d-none">
     <div class="card h-100">
         <img src="img/recetas/receta_ (${id}).png" class="card-img-top img-fluid" alt="...">
@@ -364,14 +377,14 @@ function tarjeta(titulo, id){
                 <p class="card-text" style="font-size:1em">Tiempo de cocción: </p><p style="font-size:1em">1h</p>
             </div>
             <div class="d-flex">
-                <p class="card-text" style="font-size:1em">Calorías: </p><p style="font-size:1em">100cal</p>
+                <p class="card-text" style="font-size:1em">Calorías: </p><p style="font-size:1em">${calorias}cal</p>
             </div>
             <button type="button" class="btn btn-link text-capitalize" data-bs-toggle="modal" 
-            data-bs-target="#exampleModal" style="padding-left:0;padding-right:3rem; font-family: 'Roboto', serif;font-size:1.2rem;">Ingredientes</button>
-            <button type="button" class="btn text-capitalize" style="font-size:1rem;padding-left:0.5rem ;padding-right:0.5rem ;
+            data-bs-target="#recetaModal_${id}" style="padding-left:0;padding-right:3rem; font-family: 'Roboto', serif;font-size:1.2rem;">Ingredientes</button>
+            <a href="./calendario.php" type="button" class="btn text-capitalize" style="font-size:1rem;padding-left:0.5rem ;padding-right:0.5rem;
             background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%);color:white; border-radius:20px" >Añadir a calendario 
             <img src="img/simbolo.png" alt="" class="img-fluid" style="height:1.6rem">
-            </button>
+            </a>
         </div>
     </div>
     </div>`;
@@ -387,14 +400,13 @@ function generar_listas(lista){
 }
 
 function html_receta(receta){
-    html = tarjeta(receta.titulo, receta.id) + `<!-- Ingredientes -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    html = tarjeta(receta.titulo, receta.id, receta.calorias) + `<!-- Ingredientes -->
+    <div class="modal fade" id="recetaModal_${receta.id}" tabindex="-1" aria-labelledby="recetaModalLabel_${receta.id}" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" style="max-width:700px">
             <div class="modal-content" style="background-color:#F1FDFE;">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center font-weight-bolder" id="exampleModalLabel" 
-                    style="color:#032D53;font-size:1.2rem">INGREDIENTES QUE NECESITAS PARA 
-                        ${receta.titulo}
+                    <h5 class="modal-title text-center font-weight-bolder" id="recetaModalLabel_${receta.id}" 
+                    style="color:#032D53;font-size:1.2rem">INGREDIENTES QUE NECESITAS PARA ${receta.titulo}
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -408,7 +420,7 @@ function html_receta(receta){
                         TIEMPO DE COCCIÓN: 10 MIN</h6>
                     </div>
                     <h6 style="color:#032D53;font-weight:bolder">INGREDIENTES:</h6>
-                    <img src="img/img-receta.png"  class="img-fluid" style="display:inline-block;float:right;height:16rem" alt="">
+                    <img src="img/recetas/receta_ (${receta.id}).png"  class="img-fluid" style="display:inline-block;float:right;height:16rem; border-radius:15px" alt="">
                     <ul style="color:black">`+generar_listas(receta.ingredientes)+`</ul>
                     
                     <h6 style="color:#032D53;font-weight:bolder">PREPARACIÓN:</h6>

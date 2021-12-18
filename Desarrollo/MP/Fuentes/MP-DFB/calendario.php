@@ -1,23 +1,4 @@
-<?php
-require_once('bdd.php');
-include("layouts/header.php");
-
-if(isset($_SESSION["sess_user"])){  
-	$sql = "SELECT id, user, title, start, end, color FROM events WHERE user='$_SESSION[sess_user]'";
-}
-else {
-	$message = "Tiene que iniciar sesión";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-	echo '<script>window.location.href = "login.php";</script>'; 
-	exit();
-}
-
-$req = $bdd->prepare($sql);
-$req->execute();
-
-$events = $req->fetchAll();
-
-?>
+<?php require_once('bdd.php');?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -29,29 +10,74 @@ $events = $req->fetchAll();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Calendario</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Meal Planner - Calendario</title>
+		<!-- MDB icon -->
+		<link rel="icon" href="./assets/icons/logo-calendar.svg" type="image/x-icon" />
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+		<!-- MDB -->
+		<link rel="stylesheet" href="css/mdb.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/css/about-us.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
 	
-	<!-- FullCalendar -->
-	<link href='css/fullcalendar.css' rel='stylesheet' />
-
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="css/mdb.min.css" /> -->
+		<!-- FullCalendar -->
+		<link href='css/fullcalendar.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
 
 <body>
-    <div class="container">
-                
-                <div id="calendar" class="col-md-12">
-            </div>
-			
-        <!-- /.row -->
-		
+	<header>
+    <section class="header-container" style="background: transparent;">
+      <div class="container-fluid p-0 box-1" style="background: transparent; height:100%; width:100%;">
+        <div class="container-fluid text-left p-0 busqueda" style="background: transparent;">
+          <div class="m-0 p-0">
+            <?php include("layouts/header.php"); ?>
+            <!-- MDB -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
+          </div>
+        </div>
+    </section>
+  </header>
+	<?php
+		if(isset($_SESSION["sess_user"])){  
+			$sql = "SELECT id, user, title, start, end, color FROM events WHERE user='$_SESSION[sess_user]'";
+		}
+		else {
+			$message = "Tiene que iniciar sesión";
+				echo "<script type='text/javascript'>alert('$message');</script>";
+			echo '<script>window.location.href = "login.php";</script>'; 
+			exit();
+		}
+
+		$req = $bdd->prepare($sql);
+		$req->execute();
+
+		$events = $req->fetchAll();
+
+	?>
+	<main>
+		<div style="width: 100%; height: 300px; padding-top: 0px; position: absolute; z-index:-1;">
+        <img src="./assets/img/calendar-background.png" alt="" style="width: 100%; height: 300px;">
+    </div>
+    <section class="title-container" style="width: 100%; height: 300px; padding-top: 100px; margin-bottom: 20px;">
+      <div style="width: 1300px; height: 100%; margin: 0 auto;">
+        <img src="./assets/icons/calendar-title.svg" alt="" style="width: 100%; height: 100%;">
+      </div>
+    </section>
+		<section section class="calendar-container" style="width: 75%; height: auto; margin:auto; margin-bottom: 25px">
+			<div class="container">
+				<div id="calendar" class="col-md-12" style="font-size: 20px; text-transform:capitalize;">
+			</div>
+		</section>
+		<?php require('./layouts/footer-2.php')?>
+	</main>
 		<!-- Modal -->
 		<div class="modal fade" id="ModalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
@@ -193,7 +219,7 @@ $events = $req->fetchAll();
 		$('#calendar').fullCalendar({
 			header: {
 				 language: 'es',
-				left: 'prev,next today',
+				left: 'prev,today,next ',
 				center: 'title',
 				right: 'month,basicWeek,basicDay',
 
@@ -243,7 +269,8 @@ $events = $req->fetchAll();
 					$end = $event['end'];
 				}
 			?>
-				{
+
+				,{
 					id: '<?php echo $event['id']; ?>',
 					title: '<?php echo $event['title']; ?>',
 					start: '<?php echo $start; ?>',

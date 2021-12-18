@@ -51,7 +51,7 @@
             <h3 class="text-white text-*-center" 
             style="font-size:6.1vw; font-family: 'Roboto Slab', serif;">RECETA</h3>
         </div>              
-            <div class="container input-group mb-5 w-75 botones " style="">
+            <div class="container input-group mb-5 w-75 botones">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="margin-left:12px">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" value="DESAYUNO" autocomplete="off" checked>
                     <label class="btn btn-outline-primary" for="btnradio1">DESAYUNO</label>
