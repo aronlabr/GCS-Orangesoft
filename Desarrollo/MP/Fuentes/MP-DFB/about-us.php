@@ -42,7 +42,7 @@
   <main>
     <section class="title-container">
       <img src="./assets/img/main-background.png" alt="Fondo con comida" class="title-backgound" >
-      <img src="./assets/img/title.svg" alt="Titulo atractivo" class="title-img">
+      <img src="./assets/icons/mp-au-title.svg" alt="Titulo atractivo" class="title-img">
     </section>
     <section class="us-container">
       <div class="us-img"><img src="./assets/img/women-cooking.png" alt="Mujer cocinando"></div>
