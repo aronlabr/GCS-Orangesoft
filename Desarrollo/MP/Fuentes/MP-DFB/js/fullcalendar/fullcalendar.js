@@ -7430,8 +7430,15 @@ DayGrid.mixin({
 		titleHtml =
 			'<span class="fc-title">' +
 				(htmlEscape(event.title || '') || '&nbsp;') + // we always want one line of height
+				`<div class="row">
+					<div class="row col-8"></div>
+					<div class="row col-4">
+						<i class="col-3 fas fa-edit" style="font-size:1vw;color:#032D53"></i>
+						<i class="col-3 far fa-trash-alt" style="font-size:1vw;color:#032D53"></i>
+					</div>
+				</div>`+
 			'</span>';
-		
+
 		return '<a class="' + classes.join(' ') + '"' +
 				(event.url ?
 					' href="' + htmlEscape(event.url) + '"' :
