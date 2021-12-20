@@ -20,7 +20,7 @@ Gestión de la configuración del Software.
   
 # Integrantes
 ---
-- Arango Quispe, Esmeralda - 19200300
+- Arango Quispe, Esmeralda - 1920030
 - Blas Ruiz, Luis Aaron - 19200069
 - Huarhuachi Ortega, Andrea Mariana - 19200267  
 - Palacios Barrutia, Jeanpiere Julian - 19200274  
