@@ -41,15 +41,7 @@
       <img src="./assets/icons/mp-au-title.svg" alt="Titulo atractivo" class="title-img">
     </section>
     <section class="us-container">
-      <div class="us-img"><img src="./assets/img/women-cooking.png" alt="Mujer cocinando"></div>
-      <div class="us-info">
-        <h2>¿QUIÉNES SOMOS?</h2>
-        <p>Meal Planner es una plataforma que ayuda a organizar sus alimentos mediante un planificador de comidas personalizados basados ​​en sus preferencias alimentarias, presupuesto y horario.</p>
-      </div>
     </section>
-    <section class="mision-container">
-      <div>
-        <h2>MISIÓN</h2>
         <p>Somos una plataforma web que se centra en la mejora de la alimentación de cada usuario a través de un planificador dinámico, ágil y versátil,  y recomendación de recetas saludables, con el propósito de optimisar la calidad de los alimentos.</p>
       </div>
       <div>
