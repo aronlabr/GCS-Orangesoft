@@ -31,10 +31,6 @@
       <div class="container-fluid text-left p-0 busqueda">
         <div class="m-0 p-0">
 			    <?php include("layouts/header.php"); ?>
-          <!-- MDB -->
-          <script type="text/javascript" src="js/mdb.min.js"></script>
-          <!-- Custom scripts -->
-          <script type="text/javascript"></script>
         </div>
       </div>
       <div class="container tittles">
@@ -52,6 +48,15 @@
     </div>  
   </div>
 </main>
+<style>
+  .row{
+    --mdb-gutter-x: none;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-right: 0; 
+    padding-left: 0;
+  }
+</style>
 <div class="container box-2">
   <div class="text-center my-5">
     <h1 style="font-size:3.5vw"class="text5">¿QUÉ BRINDA MEAL PLANNER?</h1>
@@ -85,7 +90,7 @@
       <img src="img/calendar.png" alt="" class="img-fluid">
       <p class="text8" style="font-size:1.7vw;">Meal Planner recomienda las recetas más saludables para 
         que puedas añadir a tu Calendario de Comidas.</p>
-        <a href="Calendario/index.php">
+        <a href="calendario.php">
           <button type="button" class="btn btn-outline btn-lg font-weight-bold" style="font-size:1.3vw;
           background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%);
           color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>

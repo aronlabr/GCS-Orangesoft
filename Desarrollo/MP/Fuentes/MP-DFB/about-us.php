@@ -31,10 +31,6 @@
         <div class="container-fluid text-left p-0 busqueda" style="background: transparent;">
           <div class="m-0 p-0">
             <?php include("layouts/header.php"); ?>
-            <!-- MDB -->
-            <script type="text/javascript" src="js/mdb.min.js"></script>
-            <!-- Custom scripts -->
-            <script type="text/javascript"></script>
           </div>
         </div>
     </section>
@@ -42,18 +38,10 @@
   <main>
     <section class="title-container">
       <img src="./assets/img/main-background.png" alt="Fondo con comida" class="title-backgound" >
-      <img src="./assets/img/title.svg" alt="Titulo atractivo" class="title-img">
+      <img src="./assets/icons/mp-au-title.svg" alt="Titulo atractivo" class="title-img">
     </section>
     <section class="us-container">
-      <div class="us-img"><img src="./assets/img/women-cooking.png" alt="Mujer cocinando"></div>
-      <div class="us-info">
-        <h2>¿QUIÉNES SOMOS?</h2>
-        <p>Meal Planner es una plataforma que ayuda a organizar sus alimentos mediante un planificador de comidas personalizados basados ​​en sus preferencias alimentarias, presupuesto y horario.</p>
-      </div>
     </section>
-    <section class="mision-container">
-      <div>
-        <h2>MISIÓN</h2>
         <p>Somos una plataforma web que se centra en la mejora de la alimentación de cada usuario a través de un planificador dinámico, ágil y versátil,  y recomendación de recetas saludables, con el propósito de optimisar la calidad de los alimentos.</p>
       </div>
       <div>

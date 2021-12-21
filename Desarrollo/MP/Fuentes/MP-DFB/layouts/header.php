@@ -31,9 +31,6 @@
         <li class="nav-item ">
           <a class="nav-link text-white" href="./about-us.php" style="margin-right:200px">Nosotros<hr style="opacity: 1;"></a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white" href="./recetas.php" style="margin-right:200px">Recetas</a>
-        </li>
       </ul>
           '<div class="d-flex align-items-center me-3 botones" style="margin: 0vw -10vw;">
           <div class="container">
@@ -52,7 +49,7 @@
               <?=$usuario;?>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><a href="./cerrar_sesion.php"><button class="dropdown-item font-weight-bold" type="button" style="font-size:1.2vw;">
+                <li><a href="./cerrar_sesion.php" style="text-decoration:none"><button class="dropdown-item font-weight-bold" type="button" style="font-size:1.2vw;">
                   Cerrar sesión</button></a></li>
               </ul>
             </div>
@@ -60,8 +57,7 @@
     </div>
   </div>
 </nav>
-<script type="text/javascript" src="../js/mdb.min.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript" src="./js/mdb.min.js"></script>
 <?php
   } else {
 ?>
@@ -93,9 +89,6 @@
         <li class="nav-item ">
           <a class="nav-link text-white" href="./about-us.php" >Nosotros <hr style="opacity: 1;"></a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link text-white" href="./recetas.php" style="margin-right:200px">Recetas</a>
-        </li>
       </ul>
       <div class="d-flex align-items-center botones">
         <a href="./register.php">
@@ -114,8 +107,7 @@
     </div>
   </div>
 </nav>
-<script type="text/javascript" src="../js/mdb.min.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript" src="./js/mdb.min.js"></script>
 <?php
   }
 ?>
