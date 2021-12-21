@@ -69,9 +69,11 @@
       <img src="img/salad.png" alt="" class="img-fluid">
       <p class="text8" style="font-size:1.7vw;">Meal Planner recomienda las recetas más saludables para 
         que puedas añadir a tu Calendario de Comidas.</p>
-        <button type="button" class="btn btn-outline btn-lg font-weight-bold" style="font-size:1.3vw;
-        background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%);
-        color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>
+        <a href="recetas.php">
+          <button type="button" class="btn btn-outline btn-lg font-weight-bold" style="font-size:1.3vw;
+          background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%);
+          color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>
+        </a>
     </div>
     <div class="col-5 col-md-5 text-center">
       <div class="container box-blue" style="width:100%;">
@@ -83,9 +85,11 @@
       <img src="img/calendar.png" alt="" class="img-fluid">
       <p class="text8" style="font-size:1.7vw;">Meal Planner recomienda las recetas más saludables para 
         que puedas añadir a tu Calendario de Comidas.</p>
-        <button type="button" class="btn btn-outline btn-lg font-weight-bold" style="font-size:1.3vw;
-        background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%);
-        color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>
+        <a href="Calendario/index.php">
+          <button type="button" class="btn btn-outline btn-lg font-weight-bold" style="font-size:1.3vw;
+          background:linear-gradient(88.33deg, #0779E4 -7.64%, #000000 145.94%);
+          color:white;font-family: 'Montserrat', sans-serif;border-radius: 20px;">Clic aquí</button>
+        </a>
     </div>
   </div>
   <div class="text-center my-5">
